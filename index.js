@@ -2,6 +2,7 @@
 
 document.getElementById("tinhTienTR").onclick = function () {
   // Đầu vào
+  var hoTen = document.getElementById("hoTen").value;
   var soTR = document.getElementById("soTR").value * 1;
   var soNguoi = document.getElementById("soNguoi").value * 1;
   //   Xử lý
@@ -24,10 +25,14 @@ document.getElementById("tinhTienTR").onclick = function () {
   }
 
   // format vnđ
-  var format = new Intl.NumberFormat("vn-VN");
+  var format = new Intl.NumberFormat();
   var soTienThueVND = format.format(soTienThue) + " vnd";
+
+  var tongTienThue =
+    "Họ tên: " + hoTen + "; Tiền thuế thu nhập cá nhân: " + soTienThueVND;
+
   // Đầu ra
-  document.getElementById("thongBao").innerHTML = soTienThueVND;
+  document.getElementById("thongBao").innerHTML = tongTienThue;
 };
 
 // Bài tập 2
