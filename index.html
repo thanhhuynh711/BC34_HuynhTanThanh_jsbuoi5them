@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài 1 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Ví dụ else if</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập họ tên</label>
+                <input id="hoTen" type="text" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập số tiền</label>
+                <input id="soTR" type="number" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Nhập số </label>
+                <input id="soNguoi" type="number" class="form-control" />
+              </div>
+              <button class="btn btn-success" id="tinhTienTR">Tính tiền</button>
+            </div>
+            <div class="card-footer text-muted" id="thongBao"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bài 2 -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Bài tập 2</div>
+            <div class="card-body">
+              <div class="form-group">
+                <select id="mySelect" onchange="myFunction()">
+                  <option>Người dân</option>
+                  <option>Doanh nghiệp</option>
+                </select>
+              </div>
+              <div class="form-group mt-3">
+                <input
+                  placeholder="Mã khác hàng"
+                  id="maKhanhHang"
+                  type="text"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
+                  placeholder="Số kênh cao cấp"
+                  id="soKenh"
+                  type="number"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group mt-3">
+                <input
+                  placeholder="Số kết nối"
+                  id="soKetNoi"
+                  type="number"
+                  class="form-control"
+                />
+              </div>
+              <button class="btn btn-success mt-3" id="tinhTienCap">
+                Tính tiền Cáp
+              </button>
+            </div>
+            <div class="card-footer text-muted" id="thongBao2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mySelect").value;
+        document.getElementById("soKetNoi").innerHTML = "You selected: " + x;
+      }
+    </script>
+    <script src="./index.js"></script>
+  </body>
+</html>
