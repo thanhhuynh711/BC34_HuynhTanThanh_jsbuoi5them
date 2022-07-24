@@ -61,3 +61,12 @@ document.getElementById("tinhTienCap").onclick = function () {
   // Đàu ra
   document.getElementById("thongBao2").innerHTML = dauRa;
 };
+function myFunction() {
+  var hide = document.getElementById("hide");
+  var x = document.getElementById("mySelect").value;
+  if (x === "Người dân") {
+    hide.style.display = "none";
+  } else {
+    hide.style.display = "block";
+  }
+}

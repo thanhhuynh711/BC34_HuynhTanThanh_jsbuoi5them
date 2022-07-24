@@ -23,7 +23,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="card">
-            <div class="card-header">Ví dụ else if</div>
+            <div class="card-header">Bài tập 1:Tính thuế thu nhập cá nhân</div>
             <div class="card-body">
               <div class="form-group">
                 <label>Nhập họ tên</label>
@@ -44,12 +44,13 @@
         </div>
       </div>
     </div>
+    <hr />
     <!-- Bài 2 -->
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <div class="card">
-            <div class="card-header">Bài tập 2</div>
+            <div class="card-header">Bài tập 2:Tính tiền cáp</div>
             <div class="card-body">
               <div class="form-group">
                 <select id="mySelect" onchange="myFunction()">
@@ -73,7 +74,7 @@
                   class="form-control"
                 />
               </div>
-              <div class="form-group mt-3">
+              <div style="display: none" id="hide" class="form-group mt-3">
                 <input
                   placeholder="Số kết nối"
                   id="soKetNoi"
@@ -102,12 +103,6 @@
       integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("mySelect").value;
-        document.getElementById("soKetNoi").innerHTML = "You selected: " + x;
-      }
-    </script>
     <script src="./index.js"></script>
   </body>
 </html>
